@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dtt.pokermen"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar">
+        <activity
+            android:name=".main.Splash"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.MainActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".levels.level01.Lvl01"
+            android:label="@string/title_activity_lvl01"></activity>
+        <activity
+            android:name=".levels.level02.Lvl02"
+            android:label="@string/title_activity_lvl02"></activity>
+        <activity
+            android:name=".levels.level03.Lvl03"
+            android:label="@string/title_activity_lvl03"></activity>
+        <activity
+            android:name=".levels.level04.Lvl04"
+            android:label="@string/title_activity_lvl04"></activity>
+        <activity
+            android:name=".levels.level05.Lvl05"
+            android:label="@string/title_activity_lvl05"></activity>
+        <activity
+            android:name=".battles.BattleActivity"
+            android:label="@string/title_activity_battle"></activity>
+    </application>
+
+</manifest>

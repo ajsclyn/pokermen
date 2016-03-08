@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pokermen_back" >
+
+    <TextView
+        android:id="@+id/txt_pok01_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_pok01"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/img_pok01"
+        android:text="@string/empty_txt"
+        android:textColor="@color/Black" />
+
+    <ProgressBar
+        android:id="@+id/prog_pok01"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_pok01"
+        android:layout_alignLeft="@+id/txt_pok01_name" />
+
+    <TextView
+        android:id="@+id/txt_lvl_title01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_pok01_name"
+        android:layout_below="@+id/txt_pok01_name"
+        android:text="@string/lvl_txt"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/txt_pok01_hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/prog_pok01"
+        android:layout_alignLeft="@+id/prog_pok01"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/txt_pok01_hp_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/prog_pok01"
+        android:layout_alignRight="@+id/prog_pok01"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/txt_pok01_lvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_lvl_title01"
+        android:layout_alignBottom="@+id/txt_lvl_title01"
+        android:layout_toRightOf="@+id/txt_lvl_title01"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/txt_pok02_lvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_lvl_title02"
+        android:layout_alignBottom="@+id/txt_lvl_title02"
+        android:layout_toRightOf="@+id/txt_lvl_title02"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+
+    <ImageView
+        android:id="@+id/img_pok02"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/img_pok01"
+        android:layout_toLeftOf="@+id/txt_pok01_name"
+        android:src="@drawable/empty_img" />
+
+    <ProgressBar
+        android:id="@+id/prog_pok02"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_pok02"
+        android:layout_alignLeft="@+id/txt_lvl_title02" />
+
+    <TextView
+        android:id="@+id/txt_pok02_hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/prog_pok02"
+        android:layout_alignLeft="@+id/txt_lvl_title02"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/txt_pok02_hp_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/prog_pok02"
+        android:layout_alignRight="@+id/prog_pok02"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/txt_lvl_title02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_pok02_hp"
+        android:layout_toLeftOf="@+id/txt_pok01_lvl"
+        android:text="@string/lvl_txt"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/txt_pok02_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_pok02_lvl"
+        android:layout_alignLeft="@+id/txt_lvl_title02"
+        android:text="@string/empty_txt"
+        android:textColor="@color/Black" />
+
+    <ImageView
+        android:id="@+id/img_pok03"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/img_pok02"
+        android:layout_below="@+id/img_pok02"
+        android:src="@drawable/empty_img" />
+
+    <ImageView
+        android:id="@+id/img_pok04"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/img_pok03"
+        android:layout_below="@+id/img_pok03"
+        android:src="@drawable/empty_img" />
+
+    <ImageView
+        android:id="@+id/img_pok05"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/img_pok04"
+        android:layout_below="@+id/img_pok04"
+        android:src="@drawable/empty_img" />
+
+    <ImageView
+        android:id="@+id/img_pok06"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignLeft="@+id/img_pok05"
+        android:layout_below="@+id/img_pok05"
+        android:src="@drawable/empty_img" />
+
+    <TextView
+        android:id="@+id/txt_pok03_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/prog_pok02"
+        android:layout_alignTop="@+id/img_pok03"
+        android:text="@string/empty_txt"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/txt_lvl_title03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_pok03_name"
+        android:layout_below="@+id/txt_pok03_name"
+        android:text="@string/lvl_txt"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/txt_pok03_lvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_lvl_title03"
+        android:layout_alignBottom="@+id/txt_lvl_title03"
+        android:layout_alignLeft="@+id/txt_pok02_lvl"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/txt_pok03_hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_lvl_title03"
+        android:layout_below="@+id/txt_lvl_title03"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+
+    <ProgressBar
+        android:id="@+id/prog_pok03"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_pok03_hp"
+        android:layout_below="@+id/txt_pok03_hp" />
+
+    <TextView
+        android:id="@+id/txt_pok03_hp_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/prog_pok03"
+        android:layout_alignRight="@+id/prog_pok03"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/txt_lvl_title04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_pok04_name"
+        android:layout_below="@+id/txt_pok04_name"
+        android:text="@string/lvl_txt"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/txt_pok04_lvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_lvl_title04"
+        android:layout_alignBottom="@+id/txt_lvl_title04"
+        android:layout_alignLeft="@+id/txt_pok03_lvl"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/txt_pok04_hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_lvl_title04"
+        android:layout_below="@+id/txt_lvl_title04"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+
+    <ProgressBar
+        android:id="@+id/prog_pok04"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_pok04"
+        android:layout_alignLeft="@+id/txt_pok04_hp" />
+
+    <TextView
+        android:id="@+id/txt_pok04_hp_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_pok04_hp"
+        android:layout_alignBottom="@+id/txt_pok04_hp"
+        android:layout_alignRight="@+id/prog_pok04"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/txt_pok05_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/prog_pok04"
+        android:layout_alignTop="@+id/img_pok05"
+        android:text="@string/empty_txt"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/txt_lvl_title05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_pok05_name"
+        android:layout_toLeftOf="@+id/txt_pok04_lvl"
+        android:text="@string/lvl_txt"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/txt_pok05_lvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_pok04_lvl"
+        android:layout_below="@+id/txt_pok05_name"
+        android:text="@string/empty_txt"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/txt_pok05_hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_lvl_title05"
+        android:layout_below="@+id/txt_lvl_title05"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+
+    <ProgressBar
+        android:id="@+id/prog_pok05"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_pok05_hp"
+        android:layout_below="@+id/txt_pok05_hp" />
+
+    <TextView
+        android:id="@+id/txt_pok05_hp_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/prog_pok05"
+        android:layout_alignRight="@+id/prog_pok05"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/txt_pok06_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/prog_pok05"
+        android:layout_alignTop="@+id/img_pok06"
+        android:text="@string/empty_txt"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/txt_lvl_title06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_pok06_name"
+        android:layout_toLeftOf="@+id/txt_pok05_lvl"
+        android:text="@string/lvl_txt"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/txt_pok06_lvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_lvl_title06"
+        android:layout_alignBottom="@+id/txt_lvl_title06"
+        android:layout_alignLeft="@+id/txt_pok05_lvl"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:id="@+id/txt_pok06_hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_lvl_title06"
+        android:layout_below="@+id/txt_lvl_title06"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+
+    <ProgressBar
+        android:id="@+id/prog_pok06"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_pok06_hp"
+        android:layout_below="@+id/txt_pok06_hp" />
+
+    <TextView
+        android:id="@+id/txt_pok06_hp_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/prog_pok06"
+        android:layout_alignRight="@+id/prog_pok06"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+    
+    <Button
+        android:id="@+id/back_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/txt_back"
+        android:onClick="close_pkrmn"
+        android:text="@string/close_txt" />
+
+    <ImageView
+        android:id="@+id/img_pok01"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/back_btn"
+        android:layout_marginLeft="42dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/empty_img" />
+
+    <TextView
+        android:id="@+id/txt_pok04_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/prog_pok03"
+        android:layout_alignTop="@+id/img_pok04"
+        android:text="@string/empty_txt"
+        android:textColor="@color/Black" />
+
+    <Button
+        android:id="@+id/but_trash"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/txt_pok01_hp"
+        android:layout_toLeftOf="@+id/img_pok02"
+        android:background="@drawable/trash"
+        android:onClick="push_trash" />
+
+    <Button
+        android:id="@+id/but_info1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/prog_pok01"
+        android:layout_alignLeft="@+id/back_btn"
+        android:background="@drawable/info"
+        android:onClick="push_info1" />
+
+    <Button
+        android:id="@+id/but_info2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/txt_pok03_name"
+        android:layout_alignLeft="@+id/but_info1"
+        android:background="@drawable/info"
+        android:onClick="push_info2" />
+
+    <Button
+        android:id="@+id/but_info3"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/prog_pok03"
+        android:layout_alignLeft="@+id/but_info2"
+        android:background="@drawable/info"
+        android:onClick="push_info3" />
+
+    <Button
+        android:id="@+id/but_info4"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/prog_pok04"
+        android:layout_alignLeft="@+id/but_info3"
+        android:background="@drawable/info"
+        android:onClick="push_info4" />
+
+    <Button
+        android:id="@+id/but_info5"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/prog_pok05"
+        android:layout_alignLeft="@+id/but_info4"
+        android:background="@drawable/info"
+        android:onClick="push_info5" />
+
+    <Button
+        android:id="@+id/but_info6"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/prog_pok06"
+        android:layout_alignLeft="@+id/but_info5"
+        android:background="@drawable/info"
+        android:onClick="push_info6" />
+
+    <Button
+        android:id="@+id/but_up4"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/img_pok04"
+        android:layout_toLeftOf="@+id/img_pok04"
+        android:background="@drawable/move_up"
+        android:onClick="push_up4" />
+
+    <Button
+        android:id="@+id/but_up5"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/img_pok06"
+        android:layout_toLeftOf="@+id/img_pok06"
+        android:background="@drawable/move_up"
+        android:onClick="push_up5" />
+
+    <Button
+        android:id="@+id/but_up1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/img_pok01"
+        android:layout_toLeftOf="@+id/img_pok02"
+        android:background="@drawable/move_up"
+        android:enabled="true"
+        android:onClick="push_up1" />
+
+    <Button
+        android:id="@+id/but_up2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/img_pok02"
+        android:layout_toLeftOf="@+id/img_pok02"
+        android:background="@drawable/move_up"
+        android:onClick="push_up2" />
+
+    <Button
+        android:id="@+id/but_up3"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/but_up2"
+        android:layout_below="@+id/img_pok03"
+        android:background="@drawable/move_up"
+        android:onClick="push_up3" />
+
+</RelativeLayout>

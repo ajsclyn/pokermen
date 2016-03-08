@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hip_hop_city"
+    tools:context="${relativePackage}.${activityClass}" >
+
+	<Button
+	    android:id="@+id/txt_btn"
+	    android:layout_width="match_parent"
+	    android:layout_height="100dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:background="@drawable/txt_back"
+	    android:onClick="sequence_driver_btn"
+	    android:text=""
+	    android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_up"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/txt_back"
+        android:onClick="press_up"
+        android:text="@string/str_up" />
+
+    <Button
+        android:id="@+id/btn_down"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_up"
+        android:background="@drawable/txt_back"
+        android:onClick="press_down"
+        android:text="@string/str_down" />
+
+    <Button
+        android:id="@+id/btn_right"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/txt_back"
+        android:onClick="press_right"
+        android:text="@string/str_right" />
+
+    <Button
+        android:id="@+id/btn_left"
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btn_right"
+        android:background="@drawable/txt_back"
+        android:onClick="press_left"
+        android:text="@string/str_left" />
+
+    <ImageView
+        android:id="@+id/img_player"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/none"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/player0" />
+
+    <ImageView
+        android:id="@+id/img_doc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/none"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/doc" />
+    
+    <ImageView
+        android:id="@+id/trainer_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/none"
+        android:src="@drawable/trainer_01_top" />
+
+    <TextView
+        android:id="@+id/town_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/none"
+        android:text="@string/empty_txt"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black" />
+
+    <Button
+        android:id="@+id/save_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/txt_back"
+        android:onClick="save_btn_press"
+        android:text="@string/save_txt" />
+
+    <Button
+        android:id="@+id/prkmn_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/save_btn"
+        android:onClick="show_pkrmn"
+        android:background="@drawable/txt_back"
+        android:text="@string/pkrmn_txt" />
+
+    <Button
+        android:id="@+id/items_but"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        android:onClick="show_items"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/prkmn_btn"
+        android:background="@drawable/txt_back"
+        android:text="@string/items_txt" />
+
+    <Button
+        android:id="@+id/player_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="55dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/items_but"
+        android:background="@drawable/txt_back"
+        android:text="@string/player_txt" />
+    
+    
+    
+</RelativeLayout>

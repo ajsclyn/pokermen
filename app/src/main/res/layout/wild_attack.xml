@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/wild_attack01">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:id="@+id/opPokImg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:id="@+id/playerPokImg"
+        android:layout_above="@+id/attackBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Attack"
+        android:id="@+id/attackBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="attackAction"
+        android:background="@drawable/txt_back" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Bag"
+        android:id="@+id/bagBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="bagAction"
+        android:background="@drawable/txt_back" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Run"
+        android:id="@+id/runBtn"
+        android:onClick="runAction"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/txt_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="POKER NAME"
+        android:id="@+id/txtOpName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="LVL:"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/txtOpName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="7"
+        android:id="@+id/txtOpLvl"
+        android:layout_below="@+id/txtOpName"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:textColor="@color/Black"
+        android:paddingLeft="5dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/opProg"
+        android:layout_alignBottom="@+id/opPokImg"
+        android:layout_toLeftOf="@+id/opPokImg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="24"
+        android:id="@+id/txtOpMax"
+        android:layout_above="@+id/opProg"
+        android:layout_toLeftOf="@+id/opPokImg"
+        android:layout_toStartOf="@+id/opPokImg"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="16"
+        android:id="@+id/txtOpHp"
+        android:layout_above="@+id/opProg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/Black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="LVL:"
+        android:id="@+id/textView8"
+        android:textColor="@color/White"
+        android:layout_above="@+id/playerPokImg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="7"
+        android:id="@+id/txtPokLvl"
+        android:textColor="@color/White"
+        android:paddingLeft="5dp"
+        android:layout_above="@+id/playerPokImg"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="POKER NAME"
+        android:id="@+id/txtPokName"
+        android:textColor="@color/White"
+        android:layout_above="@+id/textView8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pokProg"
+        android:layout_alignTop="@+id/playerPokImg"
+        android:layout_toRightOf="@+id/playerPokImg"
+        android:layout_alignRight="@+id/runBtn"
+        android:layout_alignEnd="@+id/runBtn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="16"
+        android:id="@+id/txtPokHp"
+        android:textColor="@color/White"
+        android:layout_above="@+id/pokProg"
+        android:layout_toRightOf="@+id/playerPokImg"
+        android:layout_toEndOf="@+id/playerPokImg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="24"
+        android:id="@+id/txtPokMax"
+        android:textColor="@color/White"
+        android:layout_above="@+id/pokProg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Empty"
+        android:id="@+id/butAtk1"
+        android:layout_below="@+id/pokProg"
+        android:layout_alignRight="@+id/pokProg"
+        android:layout_alignEnd="@+id/pokProg"
+        android:background="@drawable/txt_back" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Empty"
+        android:id="@+id/butAtk2"
+        android:layout_below="@+id/butAtk1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/txt_back" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Empty"
+        android:id="@+id/butAtk3"
+        android:layout_below="@+id/butAtk2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/txt_back" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Empty"
+        android:id="@+id/butAtk4"
+        android:layout_below="@+id/butAtk3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/txt_back" />
+
+    <Button
+        android:id="@+id/txt_btn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/txt_back_op"
+        android:onClick="sequence_driver_btn"
+        android:text=""
+        android:visibility="gone"/>
+
+</RelativeLayout>
